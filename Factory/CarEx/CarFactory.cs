@@ -18,6 +18,10 @@ namespace Factory.CarEx
             {
                 return new BenChi();
             }
+            else if (carBrand == CarBrand.DaZhong)
+            {
+                return new DaZhong();
+            }
             return null;
         }
     }
@@ -26,6 +30,7 @@ namespace Factory.CarEx
     {
         Unknown = 0,
         BaoMa = 1,
-        BenChi = 2
+        BenChi = 2,
+        DaZhong = 3
     }
 }
