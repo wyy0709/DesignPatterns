@@ -20,7 +20,7 @@ namespace AbstractFactory.CarEx
             carFrame.SetEngine(this.engine);
             carFrame.SetBattery(battery);
 
-            Console.WriteLine("宝马组装完毕");
+            Console.WriteLine("BaoMa组装完毕");
         }
 
         public void StartEngine()
@@ -31,7 +31,7 @@ namespace AbstractFactory.CarEx
             }
             else
             {
-                Console.Write("宝马已启动");
+                this.engine.Start();
             }
         }
     }

@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Factory.Car
+namespace AbstractFactory.Car
 {
-    public class BenChi
+    public class VARTA
     {
-        public void StartEngine()
+        public string GetName()
         {
-            Console.Write("BenChi已启动");
+            return "VARTA电瓶";
         }
     }
 }

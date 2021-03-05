@@ -10,7 +10,7 @@ namespace AbstractFactory.CarEx
     {
         public void Start()
         {
-            Console.WriteLine("宝马已启动");
+            Console.WriteLine("BaoMa已启动");
         }
     }
 }

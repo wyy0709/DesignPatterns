@@ -10,7 +10,7 @@ namespace Factory.CarEx
     {
         public void StartEngine()
         {
-            Console.Write("大众已启动");
+            Console.Write("DaZhong已启动");
         }
     }
 }

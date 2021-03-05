@@ -10,7 +10,7 @@ namespace Factory.Car
     {
         public void StartEngine()
         {
-            Console.Write("宝马已启动");
+            Console.Write("BaoMa已启动");
         }
     }
 }

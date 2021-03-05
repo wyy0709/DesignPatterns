@@ -4,19 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AbstractFactory.CarEx
+namespace AbstractFactory.Car
 {
-    public class BaoMaCarFrame : ICarFrame
+    public class BaoMaCarFrame 
     {
-        private IEngine engine;
+        public BaoMaEngine engine;
 
-        public void SetBattery(IBattery battery)
+        public void SetBattery(VARTA battery)
         {
             string batteryName = battery.GetName();
             Console.WriteLine(batteryName + "安装到BaoMa车架");
         }
 
-        public void SetEngine(IEngine engine)
+        public void SetEngine(BaoMaEngine engine)
         {
             this.engine = engine;
             Console.WriteLine("引擎安装到BaoMa车架");

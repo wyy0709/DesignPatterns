@@ -13,13 +13,13 @@ namespace AbstractFactory.CarEx
         public void SetBattery(IBattery battery)
         {
             string batteryName = battery.GetName();
-            Console.WriteLine(batteryName + "安装到奔驰车架");
+            Console.WriteLine(batteryName + "安装到BenChi车架");
 
         }
         public void SetEngine(IEngine engine)
         {
             this.engine = engine;
-            Console.WriteLine("引擎安装到奔驰车架");
+            Console.WriteLine("引擎安装到BenChi车架");
         }
     }
 }
