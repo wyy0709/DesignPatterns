@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9EE07407-C83F-477A-B588-60835B170841}</ProjectGuid>
+    <ProjectGuid>{995FBF75-9D13-45D6-916D-925DF59AE750}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Factory.Car</RootNamespace>
+    <RootNamespace>AbstractFactory.CarEx</RootNamespace>
     <AssemblyName>Car</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -32,9 +32,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,11 +43,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="README.TXT" />
-    <Compile Include="BenChi.cs" />
+    <Compile Include="AbstractFactory\BenChiAbstractFactory.cs" />
+    <Compile Include="AbstractFactory\BaoMaAbstractFactory.cs" />
+    <Compile Include="Battery\IBattery.cs" />
+    <Compile Include="Battery\VARTA.cs" />
+    <Compile Include="Factory\BenChi.cs" />
+    <Compile Include="Factory\BaoMa.cs" />
+    <Compile Include="Engine\BenChiEngine.cs" />
+    <Compile Include="Engine\BaoMaEngine.cs" />
+    <Compile Include="CarFrame\BenChiCarFrame.cs" />
+    <Compile Include="CarFrame\BaoMaCarFrame.cs" />
+    <Compile Include="Engine\IEngine.cs" />
+    <Compile Include="CarFrame\ICarFrame.cs" />
+    <Compile Include="AbstractFactory\IAbstractFactory.cs" />
+    <Compile Include="Factory\CarFactory.cs" />
+    <Compile Include="Factory\ICar.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="BaoMa.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
