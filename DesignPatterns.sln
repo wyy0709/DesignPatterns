@@ -98,6 +98,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterielBase", "ReflectionC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionC", "ReflectionC\ReflectionC\ReflectionC.csproj", "{34ABD4BB-B44E-4428-B73C-E03F049B14D6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Attribute", "Attribute", "{D79BD2E2-A4A6-4DB7-8458-3B62A01C1633}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttributeInterceptor", "Attribute\Attribute\AttributeInterceptor.csproj", "{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -224,6 +228,10 @@ Global
 		{34ABD4BB-B44E-4428-B73C-E03F049B14D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34ABD4BB-B44E-4428-B73C-E03F049B14D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34ABD4BB-B44E-4428-B73C-E03F049B14D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -265,5 +273,6 @@ Global
 		{969C6E00-D895-463A-87C0-9AEB2DB8BB09} = {809D8D9E-E4E0-4704-8EC1-71ACD7CEA225}
 		{493A0A78-CF51-4A44-B8CA-BE015AAB43D7} = {3513124F-DD53-4287-A8EF-D60660708FF0}
 		{34ABD4BB-B44E-4428-B73C-E03F049B14D6} = {3513124F-DD53-4287-A8EF-D60660708FF0}
+		{2D00C6A0-FCA0-461D-9215-DDB2A1C91FA5} = {D79BD2E2-A4A6-4DB7-8458-3B62A01C1633}
 	EndGlobalSection
 EndGlobal
