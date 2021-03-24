@@ -9,16 +9,16 @@ namespace Attribute.Interceptor
 {
     public sealed class AopAttribute : ProxyAttribute
     {
-        //public override MarshalByRefObject CreateInstance(Type serverType)
-        //{
-        //    AopProxy realProxy = new AopProxy(serverType);
-        //    return realProxy.GetTransparentProxy() as MarshalByRefObject;
-        //}
         public override MarshalByRefObject CreateInstance(Type serverType)
         {
             AopProxy realProxy = new AopProxy(serverType, base.CreateInstance(serverType));
             return realProxy.GetTransparentProxy() as MarshalByRefObject;
         }
 
+        //public override MarshalByRefObject CreateInstance(Type serverType)
+        //{
+        //    AopProxy realProxy = new AopProxy(serverType);
+        //    return realProxy.GetTransparentProxy() as MarshalByRefObject;
+        //}
     }
 }
